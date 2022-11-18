@@ -18,6 +18,10 @@ app.get('/tabla', (req, res) => {
   res.render(__dirname + '/views/tabla', req.query)
 })
 
+app.post('/tabla', (req, res) => {
+  res.render(__dirname + '/views/tabla2', req.body)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
