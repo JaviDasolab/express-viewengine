@@ -6,8 +6,6 @@ const port = 9001
 
 const middleware = require(__dirname + '/modules/middleware.js')
 
-//function saludar()
-
 app.set('view engine', 'ejs');
 app.use(middleware);
 app.use(bodyParser.urlencoded({ extended: false }));
