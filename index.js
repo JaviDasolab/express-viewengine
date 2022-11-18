@@ -15,12 +15,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/tabla', (req, res) => {
-  console.log(req);
+  console.log(req.query);
   res.render(__dirname + '/views/tabla', {
     titulo1: 'hola',
     titulo2: 'adios',
-    dato1: 'dato1',
-    dato2: 'dato2'
+    dato1: req.query.titulo1,
+    dato2: req.query.dato1
   })
 })
 
