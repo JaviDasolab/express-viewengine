@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(middleware);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.listen(port, () => {
