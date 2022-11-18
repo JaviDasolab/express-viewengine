@@ -15,13 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/tabla', (req, res) => {
-  console.log(req.query);
-  res.render(__dirname + '/views/tabla', {
-    titulo1: 'hola',
-    titulo2: 'adios',
-    dato1: req.query.titulo1,
-    dato2: req.query.dato1
-  })
+  res.render(__dirname + '/views/tabla', req.query)
 })
 
 app.listen(port, () => {
