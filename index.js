@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(middleware);
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(__dirname + '/static/index.html')
 })
 
 app.get('/tabla', (req, res) => {
